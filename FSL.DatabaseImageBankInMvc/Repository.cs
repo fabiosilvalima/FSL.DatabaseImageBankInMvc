@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using System.Data.SqlClient;
-using Dapper;
+using System.Data;
 
 namespace FSL.DatabaseImageBankInMvc
 {
@@ -14,15 +14,23 @@ namespace FSL.DatabaseImageBankInMvc
 
             try
             {
+                connection.Open();
                 var sql = @"SELECT * 
                             FROM    dbo.ImageBankFile 
                             WHERE   FileId = @fileId 
                                     OR ISNULL(AliasId, FileId) = @fileId";
 
-                var model = connection.QueryFirstOrDefault<Models.ImageFile>(sql, new
-                {
-                    fileId = fileId
-                });
+                var command = new SqlCommand(sql, connection);
+                command.Parameters.Add("@fileId", System.Data.SqlDbType.VarChar).Value = fileId;
+                command.CommandType = System.Data.CommandType.Text;
+                var ada = new SqlDataAdapter(command);
+                var dts = new DataSet();
+                ada.Fill(dts);
+
+                var model = new Models.ImageFile();
+                model.Extension = dts.Tables[0].Rows[0]["Extension"] as string;
+                model.ContentType = dts.Tables[0].Rows[0]["ContentType"] as string;
+                model.Body = dts.Tables[0].Rows[0]["FileBody"] as byte[];
 
                 return model;
             }
