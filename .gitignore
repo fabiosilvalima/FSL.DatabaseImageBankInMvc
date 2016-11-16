@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs
+/FSL.DatabaseImageBankInMvc/bin
+/FSL.DatabaseImageBankInMvc/obj/Debug
+/FSL.DatabaseImageBankInMvc/FSL.DatabaseImageBankInMvc.csproj.user
+/packages
