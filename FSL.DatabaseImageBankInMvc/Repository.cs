@@ -1,5 +1,4 @@
-﻿using System;
-using System.Configuration;
+﻿using System.Configuration;
 using System.Data.SqlClient;
 using System.Data;
 
@@ -21,8 +20,8 @@ namespace FSL.DatabaseImageBankInMvc
                                     OR ISNULL(AliasId, FileId) = @fileId";
 
                 var command = new SqlCommand(sql, connection);
-                command.Parameters.Add("@fileId", System.Data.SqlDbType.VarChar).Value = fileId;
-                command.CommandType = System.Data.CommandType.Text;
+                command.Parameters.Add("@fileId", SqlDbType.VarChar).Value = fileId;
+                command.CommandType = CommandType.Text;
                 var ada = new SqlDataAdapter(command);
                 var dts = new DataSet();
                 ada.Fill(dts);
