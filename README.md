@@ -4,6 +4,8 @@
 
 The goal is use a database to store images and use MVC to call those images using custom routes. The URL must be something like that: "*imagebank/sample-file*" or "*imagebank/32403404303*".
 
+![enter image description here](https://fabiosilvalima.files.wordpress.com/2016/11/image-bank.png)
+
 
 > **LIVE DEMO:**
 > 
