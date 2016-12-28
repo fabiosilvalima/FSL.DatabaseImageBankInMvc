@@ -7,3 +7,5 @@
 /FSL.DatabaseImageBankInMvc/obj/Debug
 /FSL.DatabaseImageBankInMvc/FSL.DatabaseImageBankInMvc.csproj.user
 /packages
+/FSL.DatabaseImageBankInMvc/obj/Release
+*.user
