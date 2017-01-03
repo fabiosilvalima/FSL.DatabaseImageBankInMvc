@@ -9,7 +9,13 @@ The goal is use a database to store images and use MVC to call those images usin
 
 > **LIVE DEMO:**
 > 
-http://codefinal.com/FSL.DatabaseImageBankInMvc/
+> http://codefinal.com/FSL.DatabaseImageBankInMvc/
+
+> **FULL ARTICLE:**
+>
+> English: https://fabiosilvalima.net/2016/11/15/database-image-bank-in-mvc/
+>
+> Português: https://fabiosilvalima.com.br/2016/11/15/banco-de-imagens-em-mvc/
 
 ---
 
