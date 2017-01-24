@@ -4,7 +4,7 @@
 
 The goal is use a database to store images and use MVC to call those images using custom routes. The URL must be something like that: "*imagebank/sample-file*" or "*imagebank/32403404303*".
 
-![enter image description here](https://fabiosilvalima.files.wordpress.com/2016/11/image-bank.png)
+![enter image description here](https://fabiosilvalima.net/wp-content/uploads/2017/01/fabiosilvalima-banco-de-imagens-em-mvc.jpg)
 
 
 > **LIVE DEMO:**
@@ -13,9 +13,9 @@ The goal is use a database to store images and use MVC to call those images usin
 
 > **FULL ARTICLE:**
 >
-> English: https://fabiosilvalima.net/2016/11/15/database-image-bank-in-mvc/
+> English: https://fabiosilvalima.net/en/database-image-bank-mvc/
 >
-> Português: https://fabiosilvalima.com.br/2016/11/15/banco-de-imagens-em-mvc/
+> Português: https://fabiosilvalima.net/banco-de-imagens-em-mvc/
 
 ---
 
